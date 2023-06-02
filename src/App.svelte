@@ -7,7 +7,7 @@
 
     function submitAnswer() {
         isSubmitted = true;
-        if (inputValue.toLowerCase() === 'олег') {
+        if (inputValue.toLowerCase() === 'лена') {
             resultText = 'Не повезло!';
         } else if (inputValue.length === 0) {
             resultText = 'Введите слово!';
@@ -19,7 +19,7 @@
 
 <main>
     <h1>Как вас зовут?</h1>
-    <input placeholder="Например, Олег" class="input" bind:value={inputValue} />
+    <input placeholder="Например, Лена" class="input" bind:value={inputValue} />
     <button on:click={submitAnswer}>Подтвердить</button>
     <h2>
         {#if isSubmitted}
